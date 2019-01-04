@@ -1,0 +1,8 @@
+.card-holder {
+    background-color: white;
+    margin: auto;
+    width: 90%;
+    align-items: center;
+    border: 1px solid #efefef;
+    padding: 20px;
+}
