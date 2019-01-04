@@ -5,6 +5,8 @@ import "./CardHolder.css";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import { images } from "../../assets/images";
+import Score from "../Score/Score"
+
 
 
 class CardHolder extends Component {
@@ -12,20 +14,27 @@ class CardHolder extends Component {
     super()
     this.state = {
       images,
-      clicked: []
     };
   }
+
   render() {
-    const cardBodies = this.state.images.map(image => <CardBody key={image.id} image={image.image} alt={image.alt}/>)
     return (
       <div>
         <Header />
-      <div className = "card-holder">
-      {cardBodies}
+        <Score />
+        <div className="card-holder">
+          {this.state.images.map(image => (
+            <CardBody
+              key={image.id}
+              image={image.image}
+              id={image.id}
+              alt={image.alt}
+            />
+          ))}
+        </div>
+        <Footer />
       </div>
-      <Footer />
-      </div>
-    )
+    );
   }
 }
 
