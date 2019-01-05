@@ -1,17 +1,16 @@
 import React, { Component } from "react";
 
 import CardBody from "../CardBody/CardBody";
-import "./CardHolder.css";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import { images } from "../../assets/images";
 import Score from "../Score/Score"
 
-
+import "./CardHolder.css";
 
 class CardHolder extends Component {
   constructor() {
-    super()
+    super();
     this.state = {
       images,
     };
@@ -21,7 +20,7 @@ class CardHolder extends Component {
     return (
       <div>
         <Header />
-        <Score />
+        <Score  />
         <div className="card-holder">
           {this.state.images.map(image => (
             <CardBody
