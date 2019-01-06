@@ -1,5 +1,10 @@
 .header{
     margin: auto;
+    height: 15%;
+    width: 70%;
     background-color: black;
-    color: white;
+    color: rgb(251, 255, 15);
+    text-align: center;
+    vertical-align: middle;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }

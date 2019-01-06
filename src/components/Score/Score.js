@@ -1,21 +1,12 @@
 import React from "react";
 import "./Score.css";
 
-class Score extends React.Component {
-    constructor() {
-      super();
-      this.state = {
-        score: 0,
-        highScore: 0,
-      };
-    }
-    render() {
+function Score(props) {
     return (
-        <div>
-            <h4>Score: {this.state.score}</h4>
-            <h4>High Score: {this.state.highScore}</h4>
+        <div class="score-box">
+            <h4>Score: {props.Score}</h4>
+            <h4>High Score: {props.HighScore}</h4>
         </div>
     );
-}
 }
 export default Score;

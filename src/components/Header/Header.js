@@ -1,10 +1,10 @@
 import React from "react";
 import "./Header.css";
 
-function Header() {
+function Header(props) {
     return (
 <div className="header">
-    <h1>Who watches the Watchmen?</h1>
+    <h1>{props.HeaderText}</h1>
 </div>
     );
 }

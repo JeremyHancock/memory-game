@@ -1,8 +1,30 @@
+body {
+    background-color: black;
+    padding-top: 150px;
+}
+
 .card-holder {
-    background-color: white;
+    background-color: whitesmoke;
     margin: auto;
     width: 90%;
     align-items: center;
     border: 1px solid #efefef;
     padding: 20px;
+}
+.header-row {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: black;
+    padding-top: 50px;
+
+}
+.instructions {
+    background-color: yellow;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5em;
+    padding-left: 15%;
+    text-align: center;
 }

@@ -1,28 +1,16 @@
 import React from "react";
 import "./CardBody.css";
 
-class CardBody extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      clicked : false
-    };
-  }
-  handleImageClick = () => {
-    console.log(this.state.clicked)
-    this.state.clicked===false ? this.setState({ clicked: true }) : console.log("Reset game")
-  }
-
-  render() {
+function CardBody(props) {
   return (
     <div className="card-body">
-      <img className="card-image" onClick={this.handleImageClick}
-        key={this.props.id}
-        src={this.props.image}
-        alt={this.props.alt}
+      <img className="card-image" onClick={() => props.handleImageClick(props.id)}
+        key={props.id}
+        src={props.image}
+        alt={props.alt}
       />
     </div>
   )
 }
-}
+
 export default CardBody;

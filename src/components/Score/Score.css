@@ -1,0 +1,8 @@
+.score-box{
+    margin: auto;
+    height: 15%;
+    width: 20%;
+    background-color: black;
+    color: rgb(251, 255, 15);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
